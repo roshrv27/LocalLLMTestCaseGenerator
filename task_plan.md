@@ -31,3 +31,8 @@
 - [x] Initialize Git repository
 - [x] Push to GitHub (https://github.com/roshrv27/LocalLLMTestCaseGenerator)
 - [x] Configure macOS Keychain for Git credentials
+
+## Phase 6: Public Access
+- [x] Install ngrok
+- [x] Configure ngrok authtoken
+- [x] Launch public tunnel (https://proagrarian-mora-ornithoid.ngrok-free.dev)
