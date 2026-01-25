@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local LLM Testcase Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="logo">🚀 Local LLM Testcase Generator</div>
+            <div class="status-indicator">
+                <span class="dot"></span> Ollama Connected
+            </div>
+        </header>
+
+        <main class="chat-container" id="chat-container">
+            <div class="message system">
+                <div class="avatar">🤖</div>
+                <div class="content">
+                    <p>System initialized. Ready to generate test cases. <br>Type your requirements below.</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="input-area">
+            <div class="input-wrapper">
+                <textarea id="user-input"
+                    placeholder="Describe your feature (e.g., 'Login page with email/password')..." rows="1"></textarea>
+                <button id="send-btn" onclick="sendMessage()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+            <div class="footer-text">Powered by Local Llama 3.2</div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
