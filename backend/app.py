@@ -1,5 +1,6 @@
 import logging
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 from tools.ollama_client import generate_response
 from tools.prompt_engine import build_prompt
 
@@ -8,10 +9,11 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({"status": "healthy", "service": "Local LLM Testcase Generator API"})
 
 @app.route('/generate', methods=['POST'])
 def generate():
@@ -40,4 +42,4 @@ def generate():
         return jsonify({"status": "error", "error_message": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=8080)
+    app.run(host='0.0.0.0', debug=True, port=3000)

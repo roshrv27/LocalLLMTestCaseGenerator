@@ -11,17 +11,15 @@ Your task is to generate comprehensive test cases based on the provided user req
 
 **Instructions:**
 1. Analyze the requirements.
-2. Create a list of test cases including:
-   - Test Case ID
-   - Description
-   - Pre-conditions
-   - Test Steps
-   - Expected Result
-3. Format the output in clean Markdown.
-4. Cover both positive and negative scenarios.
+2. Create 5-7 test cases using '##' headers for names.
+3. For each case:
+   - **ID:** [ID]
+   - **Steps:** [Steps]
+   - **Result:** [Expected Result]
+4. Format in clean Markdown.
 
 **Output Format:**
-Markdown only. No preamble or postscript.
+Markdown only.
 """
 
 def build_prompt(user_input: str, template_type: str = "general") -> str:
