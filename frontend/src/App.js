@@ -30,7 +30,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3000/generate', {
+      const response = await fetch('http://192.168.29.76:3000/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
