@@ -12,11 +12,15 @@ Your task is to generate comprehensive test cases based on the provided user req
 **Instructions:**
 1. Analyze the requirements.
 2. Create 5-7 test cases using '##' headers for names.
-3. For each case:
-   - **ID:** [ID] (Keep this on a single line)
-   - **Steps:** [Steps]
+3. For each case, use this EXACT structure:
+   - **ID:** [ID]
+   - **Steps:**
+     1. [Step 1]
+     2. [Step 2]
+     ...
    - **Result:** [Expected Result]
-4. Format in clean Markdown.
+4. Ensure "Steps:" is followed by a newline and a numbered list.
+5. Format in clean Markdown.
 
 **Output Format:**
 Markdown only.
