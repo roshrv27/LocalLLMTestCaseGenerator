@@ -13,7 +13,7 @@ CORS(app)  # Enable CORS for all routes
 
 @app.route('/health', methods=['GET'])
 def health():
-    return jsonify({"status": "healthy", "service": "Local LLM Testcase Generator API"})
+    return jsonify({"status": "healthy", "service": "Proj1_LocalLLMTestCaseGenerator API"})
 
 @app.route('/generate', methods=['POST'])
 def generate():

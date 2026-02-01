@@ -73,7 +73,7 @@ function App() {
     <div className="app-root">
       <header>
         <div className="logo-container">
-          <div className="logo">LOCAL LLM TESTCASE GENERATOR</div>
+          <div className="logo">PROJ1_LOCALLLMTESTCASEGENERATOR</div>
         </div>
         <div className="status">
           <div className="status-dot"></div>
