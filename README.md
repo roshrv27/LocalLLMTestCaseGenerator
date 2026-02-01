@@ -1,4 +1,4 @@
-# 🚀 Local LLM Testcase Generator
+# 🚀 Proj1_LocalLLMTestCaseGenerator
 
 A local AI-powered test case generator that uses **Ollama** and **Llama 3.2** to automatically create comprehensive test cases from natural language requirements.
 
@@ -103,7 +103,7 @@ sequenceDiagram
 ## 📁 Project Structure
 
 ```
-LocalLLMTestCaseGenerator/
+Proj1_LocalLLMTestCaseGenerator/
 ├── app.py                    # Flask backend server
 ├── tools/
 │   ├── ollama_client.py      # Ollama API wrapper
@@ -149,8 +149,8 @@ LocalLLMTestCaseGenerator/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/roshrv27/LocalLLMTestCaseGenerator.git
-   cd LocalLLMTestCaseGenerator
+   git clone https://github.com/roshrv27/Proj1_LocalLLMTestCaseGenerator.git
+   cd Proj1_LocalLLMTestCaseGenerator
    ```
 
 2. **Install dependencies**

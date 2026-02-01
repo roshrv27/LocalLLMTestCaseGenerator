@@ -30,10 +30,14 @@
 ### Phase 5: Trigger
 - **Port Fix**: Changed from 5000 to 8080 (macOS conflict with ControlCenter)
 - **Git Setup**: Ran `xcode-select --install` to fix `xcrun` error
-- **Repository**: Initialized Git, pushed to https://github.com/roshrv27/LocalLLMTestCaseGenerator
+- **Repository**: Initialized Git, pushed to https://github.com/roshrv27/Proj1_LocalLLMTestCaseGenerator
 - **Credentials**: Configured macOS Keychain for GitHub PAT storage
 
 ### Final State
 - App running on `http://localhost:8080`
 - Code pushed to GitHub
 - Git credentials saved to Keychain
+
+## 2026-02-01: Directory Rename
+- **Task**: Renamed repository and project directory to `Proj1_LocalLLMTestCaseGenerator`
+- **Actions**: Updated `README.md`, `task_plan.md`, `progress.md`, and GitHub repository name.

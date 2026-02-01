@@ -29,7 +29,7 @@
 - [x] Fix port conflict (5000 → 8080)
 - [x] Install Xcode Command Line Tools
 - [x] Initialize Git repository
-- [x] Push to GitHub (https://github.com/roshrv27/LocalLLMTestCaseGenerator)
+- [x] Push to GitHub (https://github.com/roshrv27/Proj1_LocalLLMTestCaseGenerator)
 - [x] Configure macOS Keychain for Git credentials
 
 ## Phase 6: Public Access
