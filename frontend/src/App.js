@@ -30,7 +30,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://192.168.29.76:3000/generate', {
+      const response = await fetch('http://localhost:3000/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ function App() {
     <div className="app-root">
       <header>
         <div className="logo-container">
-          <div className="logo">PROJ1_LOCALLLMTESTCASEGENERATOR</div>
+          <div className="logo">Proj1_LocalLLMTestCaseGenerator</div>
         </div>
         <div className="status">
           <div className="status-dot"></div>
